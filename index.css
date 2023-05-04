@@ -1,0 +1,41 @@
+html, body, .wrapper {
+    height: 100%;
+   
+  }
+body {
+    background: linear-gradient(to bottom, #ff0080, #91ff00);
+    
+    background-repeat: cover;
+    color: #e0fbe1;
+    height:100%;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 88px;
+    font-weight: bold;
+    margin-top: 200px;
+    text-shadow: 2px 2px #000000;
+}
+
+p {
+    margin: 80px;
+    font-weight: bold;
+    color: #2d0ef9;
+    font-size: 48px;
+}
+
+button {
+    background-color: #FF00FF;
+    border: 3px solid #000000;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-align: center;
+}
