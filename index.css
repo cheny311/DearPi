@@ -1,7 +1,10 @@
 html, body, .wrapper {
+    
     height: 100%;
+    
    
   }
+  
 body {
     background: linear-gradient(to bottom, #ff0080, #91ff00);
     
@@ -39,3 +42,39 @@ button {
     padding: 10px 20px;
     text-align: center;
 }
+p::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 40%;
+    height: 70%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 5.32a5.5 5.5 0 0 0-7.78 0L12 6.45l-1.06-1.13a5.5 5.5 0 0 0-7.78 0 5.5 5.5 0 0 0 0 7.78L12 21.35l8.84-8.86a5.5 5.5 0 0 0 0-7.77z'/%3E%3C/svg%3E");
+    filter: drop-shadow(0 0 20px #ffffff);
+  }
+  .circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh; /* Set container height to viewport height */
+  }
+  
+  .circle {
+    width: 50px; /* Set width as a percentage of the container width */
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: 0px 0px 10px #ffffff;
+  }
+  
+  .blue {
+    background-color: #d5ff8d;
+  }
+  
+  .red {
+    background-color: #ff9ad8;
+  }
+  
