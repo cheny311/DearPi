@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: linear-gradient(to bottom, #00fff7, #ff7300);
+    color: #b4fb62;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
