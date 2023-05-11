@@ -1,8 +1,8 @@
 /* reference chatGPT and CodePen, https://codepen.io/mengsu/pen/mPVKxW */
 body {
     background: linear-gradient(to bottom, #ff0080, #91ff00);
-    color: #b4fb62;
-    font-family: Arial, sans-serif;
+    color: #ffffff;
+    /* font-family: Arial, sans-serif; */
     font-size: 28px;
     line-height: 1.5;
     margin: 0;
@@ -24,21 +24,24 @@ html, body {
      margin-top: 5%;
      margin-left: 5%;
      margin-right: 5%;
-     text-shadow: 2px 2px 10px #4203ff;
+     text-shadow: 2px 2px 20px #5eff00;
  }
  label {
      /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+ 
      font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif;
       font-size: 26px; /* 设置字体大小 */
-      color: #333; /* 设置字体颜色 */
-      text-shadow: 2px 2px 10px #525151;
+      font-weight: bold;
+      color: #ffffff; /* 设置字体颜色 */
+      text-shadow: 2px 2px 40px #33ff00;
       margin-left: 5%;
       margin-right: 5%;
       /* 其他样式 */
     }
 p {
-    font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif;
+    /* font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif; */
+    font-family:'Copperplate',Monospace;
     margin: 0px;
     font-weight: bold;
     color: #ff0090;
