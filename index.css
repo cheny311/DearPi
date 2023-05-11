@@ -1,51 +1,51 @@
-html, body, .wrapper {
-    
-    height: 100%;
-    
-   
-  }
-  
+/* reference chatGPT and CodePen, https://codepen.io/mengsu/pen/mPVKxW */
 body {
     background: linear-gradient(to bottom, #ff0080, #91ff00);
-    
-    background-repeat: cover;
-    color: #e0fbe1;
-    height:100%;
+    color: #b4fb62;
     font-family: Arial, sans-serif;
     font-size: 28px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     text-align: center;
-    
+    height: 100%;
 }
 
 h1 {
-    font-size: 88px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 80px;
     font-weight: bold;
     margin-top: 200px;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px 10px #4203ff;
 }
 
 p {
+    font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif;
     margin: 80px;
     font-weight: bold;
-    color: #2d0ef9;
+    color: #ff0090;
     font-size: 48px;
+    text-shadow: 20px 20px 30px #a1f800,-20px -20px 30px #ff00dd;
 }
 
 button {
-    background-color: #FF00FF;
-    border: 3px solid #000000;
-    color: #FFFFFF;
+    font-family: 'Chalkduster', cursive;
+    background-color: #fd6be0;
+    border: 3px solid #55ff00;
+    border-radius: 50px;
     font-size: 24px;
     padding: 10px 20px;
     text-align: center;
+    box-shadow: 0px 0px 20px #001df7;
+    transform: translate(610px,-60px);
+    
 }
+
+
 p::after {
+    z-index: -1;
     content: "";
     position: absolute;
-    z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -30%);
@@ -53,28 +53,106 @@ p::after {
     height: 70%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 5.32a5.5 5.5 0 0 0-7.78 0L12 6.45l-1.06-1.13a5.5 5.5 0 0 0-7.78 0 5.5 5.5 0 0 0 0 7.78L12 21.35l8.84-8.86a5.5 5.5 0 0 0 0-7.77z'/%3E%3C/svg%3E");
     filter: drop-shadow(0 0 20px #ffffff);
-  }
-  .circle-container {
+}
+
+.circle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    height: 100vh; /* Set container height to viewport height */
-  }
-  
-  .circle {
+}
+
+
+.circle {
     width: 50px; /* Set width as a percentage of the container width */
     height: 50px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;
-    box-shadow: 0px 0px 10px #ffffff;
-  }
-  
-  .blue {
+    box-shadow: 0px 0px 20px #ffffff;
+}
+.blue {
     background-color: #d5ff8d;
   }
   
   .red {
     background-color: #ff9ad8;
   }
+  .blinking-star.fa-star {
+    z-index: 1;
+    color: rgb(166, 255, 0);
+    opacity: 0.1;
+    font-size: 120%;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    filter: drop-shadow(0 0 10px #ff007b);
+   
+  }
   
+ 
+  .blinking-star {
+ 
+    -webkit-animation: blink-animation 1s infinite;
+    animation: blink-animation 1s infinite;
+    
+  }
+  
+  @-webkit-keyframes blink-animation {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes blink-animation {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  
+  .star2 {
+   
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  .star3 {
+  
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1s;
+  }
+  .star4 {
+  
+    -webkit-animation-delay: 1s;
+    animation-delay: 1.5s;
+  }
+  .star5 {
+  
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1s;
+  }
+  
+  /* Step 3: Resize the stars as they blink */
+  .blinking-star {
+    -webkit-animation: blink-animation 2s infinite, scale-animation 1s infinite;
+    animation:         blink-animation 1s infinite, scale-animation 1s infinite;
+  }
+  
+  .star2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1.5s;
+  }
+  
+  @-webkit-keyframes scale-animation {
+    0%   { transform: scale(0.5,0.5); }
+    50%  { transform: scale(1,1); }
+    100% { transform: scale(0.5,0.5); }
+  }
+  @keyframes scale-animation {
+    0%   { transform: scale(0.5,0.5); }
+    50%  { transform: scale(1.5,1.5); }
+    100% { transform: scale(0.5,0.5); }
+  }
