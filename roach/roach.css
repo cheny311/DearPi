@@ -17,7 +17,7 @@ body {
 }
 h2 {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family:'Copperplate',Monospace;
+        font-family: 'Montserrat Alternates', sans-serif;
      font-size: 50px;
      /* font-weight: bold; */
      color: #ffffff;
@@ -29,10 +29,11 @@ h2 {
  label {
      /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-     font-family:'Copperplate',Monospace;
+     font-family: 'Montserrat Alternates', sans-serif;
+
      /* font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif; */
       font-size: 26px; /* 设置字体大小 */
-      font-weight: bold;
+      font-weight: 400;
       color: #0224ff; /* 设置字体颜色 */
       text-shadow: 2px 2px 40px #33ff00;
       margin-left: 5%;

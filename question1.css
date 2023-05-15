@@ -9,6 +9,7 @@ body {
     padding: 0;
     text-align: center;
     height: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 html, body {
     height: 100%;
@@ -18,8 +19,8 @@ html, body {
 
 
   h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     font-size: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
      /* font-weight: bold; */
      margin-top: 5%;
      margin-left: 5%;
@@ -29,10 +30,11 @@ html, body {
  label {
      /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
- 
-     font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif;
+     font-family: 'Montserrat Alternates', sans-serif;
+     font-weight: 400;
+     /* font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif; */
       font-size: 26px; /* 设置字体大小 */
-      font-weight: bold;
+
       color: #ffffff; /* 设置字体颜色 */
       text-shadow: 2px 2px 40px #33ff00;
       margin-left: 5%;
@@ -41,7 +43,8 @@ html, body {
     }
 p {
     /* font-family: "幼圆", Yuanti, STYuanti-SC-Regular, "Microsoft YaHei", sans-serif; */
-    font-family:'Copperplate',Monospace;
+    /* font-family:'Copperplate',Monospace; */
+    font-family: 'Rowdies', cursive;
     margin: 0px;
     font-weight: bold;
     color: #ff0090;
@@ -181,3 +184,7 @@ p::after {
     box-shadow: 0 0 20px 20px #ff0000;
   }
   
+
+  input {
+    cursor: pointer;
+  }

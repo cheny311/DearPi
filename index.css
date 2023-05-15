@@ -29,7 +29,9 @@ p {
 }
 
 button {
-    font-family: 'Chalkduster', cursive;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
     background-color: #fd6be0;
     border: 3px solid #55ff00;
     border-radius: 50px;
