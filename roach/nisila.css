@@ -90,4 +90,7 @@ body:before {
       transform: rotate(360deg) scaleY(1);
     }
   }
-  
+  input {
+    margin-left: 5%;
+    cursor: pointer;
+  }
